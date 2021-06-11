@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*Color variables*/
@@ -32,24 +33,45 @@ body{
     align-items: center;
 }
 
-.logo{
-    color: var(--red)
+.btn-mobile{
+    display: none;
 }
 
-ul{
+.logo {
+    color: var(--red);
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.nav-items ul{
   list-style-type: none;
   display: flex;
   align-items: center;
   color: inherit;
 }
 
-ul li {
+.nav-items ul li {
     margin-left: 1rem;
 }
 
 li a {
     color: var(--white);
     text-decoration: none;
+    font-weight: bold;
 }
 
 
+
+/*Mobile version*/
+@media screen and (max-width: 450px) {
+
+    .nav-items ul{
+        display: none;
+    }
+
+    .btn-mobile{
+        display: block;
+    }
+    
+}
