@@ -1,8 +1,9 @@
-let menuMobile = document.getElementsByClassName('btn-mobile');
+//btn-mobile toogle
 
-function toogleMenu () {
-    let nav = document.getElementsByClassName('nav-items');
+const menuMobile = document.getElementsByClassName('fa-bars')[0];
+
+menuMobile.addEventListener('click', () => {
+
+    const nav = document.getElementsByClassName('menu-items')[0];
     nav.classList.toggle('active');
-}
-
-menuMobile.addEventListener('click', toogleMenu);
+});

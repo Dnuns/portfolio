@@ -1,13 +1,5 @@
-/*Reset page configs*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Color variables*/
 :root {
+    /*Color variables*/
     --navy-blue: #004369;
     --red: #DB1F48;
     --teal: #01949A;
@@ -15,63 +7,96 @@
     --white: #ffffff;
 }
 
+*{
+    /*Reset page configs*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-body{
+html{
     background-color: var(--navy-blue);
     color: var(--white);
-    padding-left: 20rem;
-    padding-right: 20rem;
+    overflow: hidden;
+    max-width: 65%;
+    justify-content: center;
+    margin: auto;
+}
+
+.fa.fa-bars{
+    display: none;
 }
 
 .nav-items{
     max-width: 100%;
     height: 5rem;
     display: flex;
-    flex-flow: column;
-    flex-flow: wrap;
+    flex-flow: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.btn-mobile{
-    display: none;
-}
-
 .logo {
     color: var(--red);
-    text-decoration: none;
     font-size: 1.7rem;
     font-weight: bold;
 }
 
-.nav-items ul{
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  color: inherit;
-}
 
-.nav-items ul li {
-    margin-left: 1rem;
+.menu-items ul{
+    display: flex; 
+    gap: 1rem; 
+    align-items: center;
+    justify-content: center;
+    color: inherit;
 }
 
 li a {
     color: var(--white);
-    text-decoration: none;
     font-weight: bold;
 }
 
 
 
-/*Mobile version*/
-@media screen and (max-width: 450px) {
-
-    .nav-items ul{
-        display: none;
+@media all and (max-width: 740px) {
+    
+    /* For mobile phones */
+    *{
+      width: 100%;
     }
 
-    .btn-mobile{
+    .menu-items{  
+        position: absolute;
+        width: 50%;
+        top: 60px;
+        right: 0rem;
+        text-align: center;
+        background-color: var(--teal);
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .fa.fa-bars{
+        display:flex;
+        flex-direction: row-reverse;
+        font-size: 1.8rem;
+    }
+
+    .menu-items ul {
+        display: none;
+        font-size: .9rem;
+    }
+
+    .menu-items ul li {
+        padding: 1rem;
+    }
+
+    .menu-items.active ul{
         display: block;
     }
-    
 }
