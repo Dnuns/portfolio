@@ -1,80 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap');
+
 :root {
     /*Color variables*/
-    --navy-blue: #004369;
+    --dark-blue: #1f2235;
     --red: #DB1F48;
-    --teal: #01949A;
+    --red-secondary: #ff4A47;
+    --teal: #01767a;
     --sandy-dollar: #E5DDC8;
     --white: #ffffff;
 }
 
-*{
+* {
     /*Reset page configs*/
-    margin: 0;
     padding: 0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
-html{
-    background-color: var(--navy-blue);
+body{
+    background-color: var(--dark-blue);
     color: var(--white);
-    overflow: hidden;
-    max-width: 65%;
-    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5;
+    max-width: 70%;
     margin: auto;
+    overflow-x: hidden;
 }
 
+/*Nav*/
 .fa.fa-bars{
     display: none;
 }
 
 .nav-items{
-    max-width: 100%;
     height: 5rem;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 }
 
 .logo {
     color: var(--red);
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 
 .menu-items ul{
     display: flex; 
     gap: 1rem; 
-    align-items: center;
-    justify-content: center;
-    color: inherit;
 }
 
 li a {
     color: var(--white);
     font-weight: bold;
+    font-size: 15px;
+}
+
+/*---------------------------------------------------------*/
+
+/* Welcome section*/
+.welcome-section{
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.wel-cont h1 {
+    font-size: 40px;
+    color: var(--red);
+}
+
+.wel-cont p {
+    font-size: 30px;
+}
+
+.wel-cont img{
+    max-width: 250px;
+    min-width: 115px;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+/*---------------------------------------------------------*/
+
+
+/* Project section*/
+
+.project-section{
+    margin: auto;
+    margin-top: 5rem;
+    font-display: grid; /*rever*/
+    grid-auto-flow: column;
+
 }
 
 
 
-@media all and (max-width: 740px) {
+/*---------------------------------------------------------*/
+
+/* Contact section*/
+
+.contact-section{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;;
+    font-weight: bolder;
+}
+
+.ct-link{
+    display: flex;
+    gap: 2rem;
+    flex-flow: row;
+}
+.fa{
+    color:var(--red-secondary)
+}
+
+.fa:hover{
+    color:var(--white)
+}
+
+/*---------------------------------------------------------*/
+
+.footer{
+    font-size: 10px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: .7rem;
+    margin-top: .7rem;
+}
+
+
+@media all and (max-width: 800px) {
     
     /* For mobile phones */
-    *{
-      width: 100%;
+
+    /*Nav*/
+  
+    html{
+        max-width:95%;
     }
 
     .menu-items{  
         position: absolute;
-        width: 50%;
+        width: 35%;
         top: 60px;
-        right: 0rem;
+        right: .5rem;
         text-align: center;
-        background-color: var(--teal);
+        background-color: var(--red-secondary);
+        z-index: 1;
     }
 
     .logo {
@@ -83,13 +173,13 @@ li a {
 
     .fa.fa-bars{
         display:flex;
-        flex-direction: row-reverse;
-        font-size: 1.8rem;
+        font-size: 1.rem;
     }
 
     .menu-items ul {
         display: none;
-        font-size: .9rem;
+        font-size: .5rem;
+        padding-left: 0px;
     }
 
     .menu-items ul li {
@@ -99,4 +189,33 @@ li a {
     .menu-items.active ul{
         display: block;
     }
+
+/*---------------------------------------------------------*/
+
+/* Welcome section*/
+
+.wel-cont h1 {
+    font-size: 1.7rem;
+}
+
+.wel-cont p {
+    font-size: 1.3rem;
+}
+
+/*---------------------------------------------------------*/
+
+/* Project section*/
+
+
+
+
+
+
+
+/*---------------------------------------------------------*/
+
+/* Contact section*/
+
+
+/*---------------------------------------------------------*/
 }
