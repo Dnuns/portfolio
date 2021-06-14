@@ -8,7 +8,6 @@ menuMobile.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
-
 //typing effect
 
 let i = 0, welcomeText;
