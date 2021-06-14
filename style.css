@@ -40,6 +40,7 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     max-width: 100%;
     margin-top: 2rem;
     padding: 0px 10px 0px 10px;
@@ -82,13 +83,29 @@ li a {
     justify-content: space-evenly;
 }
 
+.blink {
+    border-left: 3px solid var(--teal);
+    height: 30px;
+    animation: blink 1s infinite;
+}
+  
+@keyframes blink {
+    0% {
+      opacity:1;
+    }
+    100%{
+        color: var(--red-secondary);
+        opacity: 0;
+    }
+}  
+
 .wel-cont h1 {
-    font-size: 30px;
+    font-size: 35px;
     color: var(--red);
 }
 
-.wel-cont p {
-    font-size: 25px;
+.wel-cont-txt {
+    font-size: 28px;
 }
 
 .wel-cont img{
@@ -233,7 +250,7 @@ li a {
     justify-content:center;
 }
 
-.wel-cont p {
+.wel-cont-txt {
     font-size: 1.1rem;
 }
 
