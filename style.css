@@ -18,7 +18,6 @@
     list-style: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    margin: auto;
    
 }
 
@@ -28,6 +27,7 @@ body{
     letter-spacing: .5;
     max-width: 70%;
     overflow-x: hidden;
+    margin: auto;
 }
 
 /*Nav*/
@@ -37,11 +37,12 @@ body{
 
 .nav-items{
     height: 5rem;
-    display: flex;
-    flex-flow: row;
+    display:flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     max-width: 100%;
+    margin-top: 2rem;
+    padding: 0px 10px 0px 10px;
 }
 
 .logo {
@@ -53,13 +54,20 @@ body{
 
 .menu-items ul{
     display: flex; 
+    flex-direction: row;
     gap: 1rem; 
+}
+
+.menu-items ul li a:hover{
+    color: var(--red-secondary);
+    transition: .7s;
 }
 
 li a {
     color: var(--white);
     font-weight: bold;
     font-size: 15px;
+    transition: .5s;
 }
 
 /*---------------------------------------------------------*/
@@ -71,8 +79,7 @@ li a {
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
+    justify-content: space-evenly;
 }
 
 .wel-cont h1 {
@@ -99,14 +106,11 @@ li a {
 /* Project section*/
 
 .project-section{
-    margin: auto;
     margin-top: 5rem;
     text-align: center;
-    font-size: inherit;
 }
 
 .project-section>div>p {
-    
     font-size: 15px;
     font-weight: bolder;
 
@@ -143,6 +147,11 @@ li a {
     flex-flow: row;
     font-size: 30px;
 }
+
+.ct-link :hover{
+    transition: .5s;
+}
+
 .fa{
     color:var(--red-secondary)
 }
@@ -212,11 +221,16 @@ li a {
 
 /* Welcome section*/
 
+.welcome-section{
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
 .wel-cont h1 {
     font-size: 1.4rem;
     display: flex;
     align-items:center;
-    justify-content:flex-start;
+    justify-content:center;
 }
 
 .wel-cont p {
@@ -224,11 +238,11 @@ li a {
 }
 
 .img{
-    display:block;
-    position: relative;
+    display:flex;
+    justify-content: center;
     width: 10px;
-    right: 90px;
     z-index: -1;
+    margin-top: 20px;
 }
 
 /*---------------------------------------------------------*/
