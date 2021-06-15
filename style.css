@@ -46,6 +46,17 @@ body{
     padding: 0px 10px 0px 10px;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position:fixed;
+    top: 0rem;
+    margin-top: 0px;
+    width: 70%;
+    max-width: 100%;
+    align-items: center;
+    background-color: var(--dark-blue);
+}
+
 .logo {
     color: var(--red);
     font-size: 32px;
@@ -81,6 +92,7 @@ li a {
     flex-flow: row;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .blink {
@@ -200,6 +212,18 @@ li a {
     body{
         max-width:85%;
     }
+
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+        position:fixed;
+        top: 0rem;
+        margin-top: 0px;
+        width: 85%;
+        max-width: 100%;
+        align-items: center;
+        background-color: var(--dark-blue);
+    }
+
 
     .menu-items{  
         position: absolute;
