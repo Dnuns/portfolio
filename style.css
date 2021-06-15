@@ -51,10 +51,8 @@ body{
     position:fixed;
     top: 0rem;
     margin-top: 0px;
-    width: 70%;
-    max-width: 100%;
-    align-items: center;
     background-color: var(--dark-blue);
+    width: 73%;
 }
 
 .logo {
@@ -137,6 +135,7 @@ li a {
 .project-section{
     margin-top: 5rem;
     text-align: center;
+    display: block;
 }
 
 .project-section>div>p {
