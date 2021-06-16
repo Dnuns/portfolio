@@ -10,6 +10,11 @@
     --white: #ffffff;
 }
 
+::selection{
+    color: var(--sandy-dollar);
+    background-color: var(--teal);
+}
+
 * {
     /*Reset page configs*/
     padding: 0;
