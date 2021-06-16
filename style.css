@@ -130,6 +130,43 @@ li a {
 /*---------------------------------------------------------*/
 
 
+/* CV section*/
+
+.cv-section{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+}
+
+.cv-button {
+    color: var(--white);
+    background-color: var(--red-secondary);
+    border-color: var(--red-secondary);
+    border-radius: 3%;
+    transition: .7s;
+    padding: 12px 14px;
+   
+}
+
+.cv-button:hover {
+    color: var(--dark-blue);
+    background-color: var(--white);
+    border-color: var(--white);
+    border-radius: 5%;
+}
+
+
+.cv-button a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 1rem;
+}
+
+/*---------------------------------------------------------*/
+
+
 /* Project section*/
 
 .project-section{
@@ -283,6 +320,16 @@ li a {
     width: 10px;
     z-index: -1;
     margin-top: 20px;
+}
+
+.cv-button {
+    padding: 8px 10px;
+   
+}
+
+
+.cv-button a {
+    font-size: 0.8rem;
 }
 
 /*---------------------------------------------------------*/
