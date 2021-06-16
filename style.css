@@ -52,7 +52,7 @@ body{
     top: 0rem;
     margin-top: 0px;
     background-color: var(--dark-blue);
-    width: 73%;
+    width: 70%;
 }
 
 .logo {
@@ -92,7 +92,6 @@ li a {
     flex-flow: row;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 1;
 }
 
 .blink {
@@ -186,23 +185,21 @@ li a {
     margin-top: 2rem;
     padding-top: 5rem;
     text-align: center;
-    display: block;
-}
-
-.project-section>div>p {
-    font-size: 15px;
-    font-weight: bolder;
-
 }
 
 .projects{
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0px 15px 0px 15px;
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns:50% 50%;
-    gap: 1.5rem;
+    grid-template-columns:50%  50%;
+    gap: .3rem;
 }
 
+.projects div{
+    margin-bottom: 1rem;
+}
 
 /*---------------------------------------------------------*/
 
@@ -365,18 +362,27 @@ li a {
 /*---------------------------------------------------------*/
 
 /* Project section*/
+.project-section{
+    font-size: .7rem;
+}
+
 .projects{
     margin-top: 1rem;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns:100%;
     gap: 1.5rem;
+    font-weight: normal !important;
 }
 
 
 /*---------------------------------------------------------*/
 
 /* Contact section*/
+.contact-section{
+    font-size: .7rem;
+}
+
 .ct-link{
     font-size: 22px;
 }
