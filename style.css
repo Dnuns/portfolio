@@ -65,7 +65,7 @@ body{
 .menu-items ul{
     display: flex; 
     flex-direction: row;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .menu-items ul li a:hover{
@@ -78,6 +78,7 @@ li a {
     font-weight: bold;
     font-size: 15px;
     transition: .5s;
+    padding: 5px 5px 5px 5px;
 }
 
 /*---------------------------------------------------------*/
@@ -105,7 +106,7 @@ li a {
       opacity:1;
     }
     100%{
-        color: var(--red-secondary);
+        color: var(--dark-blue);
         opacity: 0;
     }
 }  
@@ -297,13 +298,25 @@ li a {
     }
 
     .menu-items ul li {
-        padding: 1rem;
+        padding: 0.3rem;
     }
 
     .menu-items.active ul{
         display: block;
     }
 
+    .menu-items ul li a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu-items ul li a:hover{
+        color: var(--dark-blue);
+        transition: .7s;
+    }
+
+    
 /*---------------------------------------------------------*/
 
 /* Welcome section*/
