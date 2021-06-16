@@ -96,8 +96,8 @@ li a {
 }
 
 .blink {
-    border-left: 3px solid var(--teal);
-    height: 30px;
+    border-left: 4px solid var(--teal);
+    height: 25px;
     animation: blink 1s infinite;
 }
   
@@ -110,6 +110,10 @@ li a {
         opacity: 0;
     }
 }  
+
+.wel-cont{
+    z-index: -1;
+}
 
 .wel-cont h1 {
     font-size: 35px;
