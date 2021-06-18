@@ -189,6 +189,7 @@ li a {
     margin-top: 2rem;
     padding-top: 5rem;
     text-align: center;
+    text-justify: center;
 }
 
 .projects{
@@ -198,13 +199,27 @@ li a {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns:50%  50%;
-    gap: .3rem;
     font-weight: lighter;
+    gap: 1.5rem;
 }
 
 .projects div{
     margin-bottom: 1rem;
-    gap: 1px;
+    margin-top: 1rem;
+}
+
+.repo{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--teal);
+    max-width: 440px;
+    border-radius: 5%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    height: 100%;
 }
 
 .repo-img{
