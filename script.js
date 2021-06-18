@@ -52,3 +52,36 @@ function typing(){
 }
 
 typing();
+
+
+//Populate whith Github api
+
+function fetchRepos(){
+  
+  let user = 'Dnuns';
+  
+  let container = document.getElementsByClassName('projects')[0];
+
+  axios.get(`https://api.github.com/users/${user}/repos`).then((result) => {
+
+    let {data} = result;
+
+    data.forEach(element => {
+      
+      container.insertAdjacentHTML('beforeend', 
+      
+      `<div class="repo">
+      <div>
+        <img class="repo-img" width="100%" height="auto"  src="https://raw.githubusercontent.com/${user}/igrp-scripts/main/project-img.jpg">
+      </div>
+      <div>
+        <a class="repo-link" href="${element.html_url}" target="_blank" rel="noopener">${element.name}</a>
+      <div>
+      </div>` 
+      
+      )
+    });
+
+  }); 
+
+}
