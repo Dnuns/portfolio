@@ -190,6 +190,7 @@ li a {
     padding-top: 5rem;
     text-align: center;
     text-justify: center;
+    max-width: 96%;
 }
 
 .projects{
@@ -200,25 +201,27 @@ li a {
     grid-auto-flow: row;
     grid-template-columns:50%  50%;
     font-weight: lighter;
-    gap: 1.5rem;
+    row-gap: 1rem;
+    max-width: 100%;
 }
 
 .projects div{
     margin-bottom: 1rem;
     margin-top: 1rem;
+    max-width: 96%;
 }
 
 .repo{
     display: grid;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     margin: auto;
     background-color: var(--teal);
-    max-width: 440px;
+    max-width: 85%;
     border-radius: 5%;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 85%;
     height: 100%;
 }
 
@@ -230,7 +233,7 @@ li a {
 }
 
 .repo-link{
-    position: inherit;
+    align-self: center;
     color: var(--white);
     background-color: var(--red-secondary);
     border-radius: 3%;
@@ -291,7 +294,7 @@ li a {
 }
 
 
-@media all and (max-width: 740px) {
+@media all and (max-width: 820px) {
     
     /* For mobile phones */
 
@@ -418,9 +421,17 @@ li a {
     font-size: .8rem;
 }
 
+
+.repo{
+    max-width: 100%;
+    max-height: 100%;
+    width: 70%;
+    height: 80%;
+}
+
 .repo-img{
-    max-width: 230px;
-    max-height: 230px;
+    max-width: 170px;
+    max-height: 150px;
 }
 
 
