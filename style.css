@@ -191,6 +191,7 @@ li a {
     text-align: center;
     text-justify: center;
     max-width: 96%;
+    margin: auto;
 }
 
 .projects{
