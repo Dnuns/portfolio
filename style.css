@@ -215,7 +215,7 @@ li a {
 .repo{
     display: grid;
     align-content: center;
-    justify-content: center;
+    justify-items: center;
     margin: auto;
     background-color: var(--teal);
     max-width: 85%;
@@ -223,7 +223,11 @@ li a {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 85%;
-    height: 100%;
+    height: 100% !important;
+}
+
+.repo-content{
+    margin: 2px 0px 2px 0px !important;
 }
 
 .repo-img{
@@ -241,6 +245,7 @@ li a {
     transition: .7s;
     padding: 6px 8px;
     cursor:pointer;
+ 
 }
 
 .repo-link:hover{

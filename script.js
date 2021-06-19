@@ -71,12 +71,10 @@ function fetchRepos(){
       container.insertAdjacentHTML('beforeend', 
       
       `<div class="repo">
-      <div>
-        <img class="repo-img" width="100%" height="auto"  src="https://raw.githubusercontent.com/${user}/${element.name}/main/project-img.jpg">
-      </div>
-      <div>
-        <a class="repo-link" href="${element.html_url}" target="_blank" rel="noopener">${element.name}</a>
-      <div>
+        <div class="repo-content">
+          <img class="repo-img" width="100%" height="auto"  src="https://raw.githubusercontent.com/${user}/${element.name}/main/project-img.jpg">
+        </div>
+          <a class="repo-link" href="${element.html_url}" target="_blank" rel="noopener">${element.name}</a>
       </div>` 
       
       )
