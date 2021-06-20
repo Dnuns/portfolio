@@ -1,7 +1,3 @@
-//stick navbar
-
-window.onscroll = function() {navPositionFixed()};
-
 // Get the navbar
 let navbar = document.getElementsByClassName('nav-items')[0];
 // Get the offset position of the navbar
@@ -16,8 +12,10 @@ function navPositionFixed() {
   }
 }
 
-//btn-mobile toogle
+//stick navbar
+window.onscroll = function() {navPositionFixed()};
 
+//btn-mobile toogle
 const menuMobile = document.getElementsByClassName('fa-bars')[0];
 
 const nav = document.getElementsByClassName('menu-items')[0];
@@ -27,18 +25,16 @@ menuMobile.addEventListener('click', () => {
 });
 
 //menu toogle
-
 nav.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
 //typing effect
-
 let i = 0, welcomeText;
 
 welcomeText = "I'm a junior full stack developer" ;
 
-function typing(){   
+(function typing(){   
 
     if(i < welcomeText.length){
 
@@ -49,13 +45,10 @@ function typing(){
 
     setTimeout(typing,50);
 
-}
-
-typing();
+})();
 
 
-//Populate whith Github api
-
+//Populate whith Github API
 function fetchRepos(){
   
   let user = 'Dnuns';
@@ -83,3 +76,5 @@ function fetchRepos(){
   }); 
 
 }
+
+window.onload = function() {fetchRepos()};

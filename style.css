@@ -195,6 +195,10 @@ li a {
     margin: auto;
 }
 
+.project-section h2{
+    font-size: 17px;
+}
+
 .projects{
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -267,8 +271,11 @@ li a {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    font-size: 15px;;
     font-weight: bolder;
+}
+
+.contact-section h2 {
+    font-size: 17px;
 }
 
 .ct-link{
@@ -419,6 +426,10 @@ li a {
     font-size: .7rem;
 }
 
+.project-section h2{
+    font-size: 12px;
+}
+
 .projects{
     margin-top: 1rem;
     display: grid;
@@ -441,6 +452,10 @@ li a {
 /* Contact section*/
 .contact-section{
     font-size: .7rem;
+}
+
+.contact-section h2 {
+    font-size: 12px;
 }
 
 .ct-link{

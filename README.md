@@ -18,6 +18,7 @@ This project was created in order to practice my skills with HTML, CSS and javaS
 
 ![portfolio desktop screenshot](readme_resources/portfolio_fPm.png)
 
+![portfolio desktop screenshot](readme_resources/seo.jpg)
   
 ## Author
 
