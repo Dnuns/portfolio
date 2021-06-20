@@ -10,14 +10,13 @@ This project was created in order to practice my skills with HTML, CSS and javaS
   
 ## Demo
 
-![portfolio desktop screenshot](project-gif.gif)
+![portfolio desktop screenshot](readme_resources/project-gif.gif)
   
 ## Screenshots
 
+![portfolio desktop screenshot](readme_resources/portfolio_fP.png)
 
-![portfolio desktop screenshot](portfolio_fP.png)
-
-![portfolio desktop screenshot](portfolio_fPm.png)
+![portfolio desktop screenshot](readme_resources/portfolio_fPm.png)
 
   
 ## Author
