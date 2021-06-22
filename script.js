@@ -35,7 +35,7 @@ nav.addEventListener('click', () => {
 //typing effect
 let i = 0, welcomeText;
 
-welcomeText = "I'm a junior full stack developer" ;
+welcomeText = "Junior full stack developer";
 
 (function typing(){   
 
