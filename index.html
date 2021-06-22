@@ -16,15 +16,13 @@
 
 <body>
 
+    
     <header>
 
         <nav class="nav-items">
 
-            <div>
-                <a class="logo" href="./index.html">DAVID NUNES</a>
-            </div>
+            <!--<i class="fa fa-bars"></i>-->
 
-            <i class="fa fa-bars"></i>
 
             <div class="menu-items">
 
@@ -36,15 +34,21 @@
 
             </div>
 
+            <span class="theme"><i class="fa fa-adjust" onclick="toggleTheme()"></i></span>
+        
         </nav>
 
-
     </header>
+
 
     <section id="welcome-section" class="welcome-section">
 
         <div class="wel-cont">
-            <h1>Welcome</h1><br>
+           <!--<h1>Welcome</h1><br> --> 
+            <p>
+                <spam class="iam">I am </spam><a class="logo" href="./index.html"> DAVID NUNES</a>
+            </p>
+
             <spam class="wel-cont-txt"></spam>
             <span class="blink"> </span>
         </div>
@@ -109,6 +113,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" async></script>
     <script type="text/javascript" src="./script.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,7 @@
+
 // Get the navbar
 let navbar = document.getElementsByClassName('nav-items')[0];
+
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
@@ -14,7 +16,7 @@ function navPositionFixed() {
 
 //stick navbar
 window.onscroll = function() {navPositionFixed()};
-
+/*
 //btn-mobile toogle
 const menuMobile = document.getElementsByClassName('fa-bars')[0];
 
@@ -28,6 +30,7 @@ menuMobile.addEventListener('click', () => {
 nav.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
+*/
 
 //typing effect
 let i = 0, welcomeText;
@@ -78,3 +81,17 @@ function fetchRepos(){
 }
 
 window.onload = function() {fetchRepos()};
+
+
+//Dark mode
+function toggleTheme() {
+
+  let theme = document.getElementsByTagName('body')[0];
+  let navItemsTheme = document.getElementsByClassName('nav-items')[0];
+  let menuItemsTheme = document.getElementsByClassName('menu-items')[0];
+  
+  theme.classList.toggle('light-mode');
+  navItemsTheme.classList.toggle('light-mode');
+  menuItemsTheme.classList.toggle('light-mode'); 
+  
+}
