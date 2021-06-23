@@ -308,7 +308,8 @@ li a {
 }
 
 .fa{
-    color:var(--red-secondary)
+    color:var(--red-secondary);
+    padding: .5rem;
 }
 
 .fa:hover{
@@ -416,100 +417,100 @@ li a {
 
     */
 
-/*---------------------------------------------------------*/
+    /*---------------------------------------------------------*/
 
-/* Welcome section*/
+    /* Welcome section*/
 
-.logo{
-    font-size: 27px;
-}
+    .logo{
+        font-size: 27px;
+    }
 
-.iam{
-    font-size: 27px;
-}
-.welcome-section{
-    flex-direction: column;
-    flex-basis: 100%;
-}
+    .iam{
+        font-size: 27px;
+    }
+    .welcome-section{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
 
-.wel-cont h1 {
-    font-size: 1.7rem;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-}
+    .wel-cont h1 {
+        font-size: 1.7rem;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
 
-.wel-cont-txt {
-    font-size: 1.1rem;
-}
+    .wel-cont-txt {
+        font-size: 1.1rem;
+    }
 
-.img{
-    display:flex;
-    justify-content: center;
-    width: 10px;
-    z-index: -1;
-    margin-top: 20px;
-}
+    .img{
+        display:flex;
+        justify-content: center;
+        width: 10px;
+        z-index: -1;
+        margin-top: 20px;
+    }
 
-/*---------------------------------------------------------*/
+    /*---------------------------------------------------------*/
 
-/* CV section*/
-.cv-button {
-    padding: 6px 8px;
-   
-}
-
-
-.cv-button a {
-    font-size: 0.8rem;
-}
-
-/*---------------------------------------------------------*/
-
-/* Project section*/
-.project-section{
-    font-size: .7rem;
-}
-
-.project-section h2{
-    font-size: 12px;
-}
-
-.projects{
-    margin-top: 1rem;
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns:100%;
-    gap: 1.5rem;
-    font-size: .8rem;
-}
-
-.repo-img{
-    max-width: 100%;
-    max-height: auto;
-    height: auto;
-    width: auto;
-}
+    /* CV section*/
+    .cv-button {
+        padding: 6px 8px;
+    
+    }
 
 
-/*---------------------------------------------------------*/
+    .cv-button a {
+        font-size: 0.8rem;
+    }
 
-/* Contact section*/
-.contact-section{
-    font-size: .7rem;
-}
+    /*---------------------------------------------------------*/
 
-.contact-section h2 {
-    font-size: 12px;
-}
+    /* Project section*/
+    .project-section{
+        font-size: .7rem;
+    }
 
-.ct-link{
-    font-size: 22px;
-}
+    .project-section h2{
+        font-size: 12px;
+    }
 
-.footer{
-    font-size: .5rem;
-}
+    .projects{
+        margin-top: 1rem;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns:100%;
+        gap: 1.5rem;
+        font-size: .8rem;
+    }
 
-/*---------------------------------------------------------*/
+    .repo-img{
+        max-width: 100%;
+        max-height: auto;
+        height: auto;
+        width: auto;
+    }
+
+
+    /*---------------------------------------------------------*/
+
+    /* Contact section*/
+    .contact-section{
+        font-size: .7rem;
+    }
+
+    .contact-section h2 {
+        font-size: 12px;
+    }
+
+    .ct-link{
+        font-size: 22px;
+    }
+
+    .footer{
+        font-size: .5rem;
+    }
+
+    /*---------------------------------------------------------*/
 }
