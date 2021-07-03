@@ -25,18 +25,21 @@
     font-family: 'Poppins', sans-serif;  
 }
 
-/* theme*/
+/* theme
 .light-mode {
     background-color: var(--sandy-dollar) !important;
     color: var(--dark-blue) !important;
 }
 
-.theme{
-    font-size: 30px;
-}
-
 .theme :hover{
     transition: .5s;
+}
+
+*/
+
+.theme{
+   /* font-size: 30px; */
+   display: none;
 }
 
 body{
@@ -59,6 +62,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
     margin-top: 2rem;
     padding: 0;
@@ -343,7 +347,7 @@ li a {
 
     .nav-items{
         margin-top: 0;
-        justify-content: space-between;
+        justify-content: center; /*space-between*/
         z-index: 1;
         width: 100%;
     }
