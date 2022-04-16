@@ -1,120 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="David Nunes junior full stack developer Portifolio"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet preload"
+      href="./font-awesome/css/font-awesome.css"
+      as="style"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./resources/favicon.ico"
+    />
+    <title>Personal Portfolio</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="David Nunes junior full stack developer Portifolio">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet preload" href="./font-awesome/css/font-awesome.css" as="style">
-    <link rel="shortcut icon" type="image/x-icon" href="./resources/favicon.ico">
-    <title>David's Personal Portfolio</title>
-</head>
-
-<body>
-
-    
+  <body>
     <header>
-
-        <nav class="nav-items">
-
-            <!--<i class="fa fa-bars"></i>-->
-
-
-            <div class="menu-items">
-
-                <ul>
-                    <li><a href="#welcome-section">HOME</a></li>
-                    <li><a href="#project-section">PROJECTS</a></li>
-                    <li><a href="#contact-section">CONTACT</a></li>
-                </ul>
-
-            </div>
-
-            <span class="theme"><i class="fa fa-adjust" onclick="toggleTheme()"></i></span>
-        
-        </nav>
-
+      <nav class="container">
+        <div class="menu">
+          <a href="#welcome-section">Home</a>
+          <a href="#project-section">Projects</a>
+          <a href="#contact-section">Contact</a>
+        </div>
+      </nav>
     </header>
 
+    <main class="container">
+      <section id="welcome-section" >About me</section>
 
-    <section id="welcome-section" class="welcome-section">
+      <section id="project-section">My projects</section>
 
-        <div class="wel-cont">
-           <!--<h1>Welcome</h1><br> --> 
-            <p>
-                <spam class="iam">I am </spam><a class="logo" href="./index.html"> DAVID NUNES</a>
-            </p>
+      <section id="contact-section">Contact</section>
+    </main>
 
-            <spam class="wel-cont-txt"></spam>
-            <span class="blink"> </span>
-        </div>
-
-        <div class="wel-cont img">
-            <img src="./resources/photo-small.jpg" width="640" height="360"  alt="profile picture">
-        </div>
-
-    </section>
+    <footer class="container">
+      <span>Made with <i class="fa fa-heart"></i></span> 
+    </footer>
 
     <!--
-    <section class="cv-section">
-
-        <div>
-            <button class="cv-button"><a href="https://drive.google.com/uc?id=1dgUJWiW7SSiaoU5znF9yYKIk9nE8ViCF&export=download" class="btn btn-default main_btn">Download CV</a></button>
-        </div>
-
-    </section> 
-    --> 
-
-    <section id="project-section" class="project-section">
-
-        <div>
-            <h2>MY PROJECTS</h2>
-        </div>
-
-        <div class="projects">
-            
-        </div>
-
-    </section>
-
-
-    <section id="contact-section" class="contact-section">
-
-        <div>
-            <h2>CONTACT ME</h2>
-        </div>
-        <div class="ct-link">
-
-            <a href="https://www.linkedin.com/in/davsnuns/" target="_blank" rel="noopener" name="linkedin icon" alt="linkedin icon">
-               <i class="fa fa-linkedin" aria-hidden="false"> </i>
-            </a>
-
-            <a href="https://github.com/Dnuns" target="_blank" rel="noopener" name="github icon" alt="github icon">
-                 <i class="fa fa-github" aria-hidden="false"> </i>
-            </a>
-            <a href="mailto:davsnuns@gmail.com?subject=Change me!" name="email icon" alt="email icon">
-                <i class="fa fa-envelope-o" aria-hidden="false"> </i>
-            </a>
-
-        </div>
-        
-    </section>
-
-    <section>
-        <hr style="color:#DB1F48;">
-        <footer class="footer">
-            <p>Made with<i class="fa fa-heart"></i></p>
-        </footer>
-    </section>
-    
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" async></script>
     <script type="text/javascript" src="./script.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-
-</body>
-
+    -->
+  </body>
 </html>
